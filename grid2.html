@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }/*ızgara alanı Başlık*/
+.item2 { grid-area: menu; }/*ızgara alanı Menü*/
+.item3 { grid-area: main; }/*ızgara alanı Ana*/
+.item4 { grid-area: right; } /*ızgara alanı Sağ*/
+.item5 { grid-area: footer; } /*ızgara alanı Alt Bilgi*/
+
+.grid-container {
+  display: grid;
+  grid-template-areas: /*ızgara-şablon-alanlar*/
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 8px;/*ızgara-şablon-alanlar*/
+  background-color: #00FFE5;/*Arka Plan Rengi*/
+  padding: 8px;
+}
+
+.grid-container >/*ızgara-konteyner*/ div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;/*metin hizalama merkezi*/ 
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1">
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+<p>Parçalar</p>
+<div class="dropdown">
+  <button class="dropbtn">Elemanlar</button>
+  <div class="dropdown-content">
+  <a href="#">Anakart</a>
+  <a href="#">Ram</a>
+  <a href="#">Ekran Kartı</a>
+   <a href="#">Harddisk</a>
+  <a href="#">Power</a>
+  <a href="#">Monitör</a>
+   <a href="#">Klavye</a>
+  <a href="#">Mouse</a>
+  <a href="#">Hoparlör</a>
+  </div>
+</div>
+    
+
+  </div><!--"Izgara Alanı Başlık Kısmı "-->
+  <div class="item2">İkinci El Laptoplar</div>
+  <div class="item3">Bilgisayar Parçaları</div>  
+  <div class="item4">Bilgisayar Tamiri</div>
+  <div class="item5">Oyun Bilgisayarları</div>
+</div>
+
+</body>
+</html>
