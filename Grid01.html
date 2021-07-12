@@ -1,0 +1,42 @@
+​<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }/*ızgara alanı Başlık*/
+.item2 { grid-area: menu; }/*ızgara alanı Menü*/
+.item3 { grid-area: main; }/*ızgara alanı Ana*/
+.item4 { grid-area: right; } /*ızgara alanı Sağ*/
+.item5 { grid-area: footer; } /*ızgara alanı Alt Bilgi*/
+
+.grid-container {
+  display: grid;
+  grid-template-areas: /*ızgara-şablon-alanlar*/
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 8px;/*ızgara-şablon-alanlar*/
+  background-color: #FF4508;/*Arka Plan Rengi*/
+  padding: 8px;
+}
+
+.grid-container >/*ızgara-konteyner*/ div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;/*metin hizalama merkezi*/ 
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1">Ali Bölükbaşı</div><!--"Izgara Alanı Başlık Kısmı "-->
+  <div class="item2">2.Sınıf</div>
+  <div class="item3">İnternet Ve Ağ Teknolojileri</div>  
+  <div class="item4">201933261015</div>
+  <div class="item5">Tavşanlı Meslek Yüksek Okulu</div>
+</div>
+
+</body>
+</html>
